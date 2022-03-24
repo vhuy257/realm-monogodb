@@ -72,6 +72,7 @@ export function useTodos() {
           _partition
           isComplete
           summary
+          dateCreated
         }
       }
     `;
@@ -150,6 +151,7 @@ export function useTodos() {
                 _partition
                 isComplete
                 summary
+                dateCreated
               }
             }
           `,
