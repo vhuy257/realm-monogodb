@@ -22,7 +22,7 @@ export function TodoItem({ todo, todoActions }) {
           }}
         />
       </ListItemIcon>
-      <ListItemText>{todo.summary}</ListItemText>
+      <ListItemText>{todo.summary} {todo.dateCreated}</ListItemText>
       <ListItemSecondaryAction>
         <IconButton
           edge="end"
