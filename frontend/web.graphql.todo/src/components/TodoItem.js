@@ -8,6 +8,7 @@ import {
   ListItemText,
 } from "@material-ui/core";
 import ClearIcon from "@material-ui/icons/Clear";
+import Moment from 'react-moment';
 
 export function TodoItem({ todo, todoActions }) {
   return (
@@ -22,7 +23,10 @@ export function TodoItem({ todo, todoActions }) {
           }}
         />
       </ListItemIcon>
-      <ListItemText>{todo.summary} {todo.dateCreated}</ListItemText>
+      <ListItemText>{todo.summary}</ListItemText>
+      <Moment 
+      format="DD/MM/YYYY"
+      date={todo.dateCreated} />
       <ListItemSecondaryAction>
         <IconButton
           edge="end"
